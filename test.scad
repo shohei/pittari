@@ -1,5 +1,5 @@
 module test(){
-  cube(size=20,center=true);
-  sphere(r = 30);
+  cube(size=10,center=true);
+  sphere(r=7);
 }
 test();
