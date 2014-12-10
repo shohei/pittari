@@ -19,6 +19,7 @@ $ git clone https://github.com/shohei/pittari.git
 ```sh
 $ brew install chrome-cli 
 $ brew install fswatch 
+$ brew install openjscad 
 ```
 ### Initialize
 ```sh
