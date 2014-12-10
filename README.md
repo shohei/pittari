@@ -5,6 +5,7 @@ Pittari
 Pittari controller for OpenSCAD
 
 WIP: Currently only viewer implemented
+![screenshot](image.png)
 
 # Install
 ```sh
@@ -12,6 +13,11 @@ $ git clone https://github.com/shohei/pittari.git
 ```
 
 # How to use
+### Dependency 
+```sh
+$ brew install chrome-cli 
+$ brew install fswatch 
+```
 ### Initialize
 ```sh
 $ bower install
