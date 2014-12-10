@@ -3,11 +3,12 @@ Pittari
 
 # What's this?
 Pittari controller for OpenSCAD
+
 WIP: Currently only viewer implemented
 
 # Install
 ```sh
-$ git clone 
+$ git clone https://github.com/shohei/pittari.git
 ```
 
 # How to use
@@ -18,7 +19,7 @@ $ npm install
 ```
 ### Run
 ```sh
-$ ./serve.sh <YOUR SCAD FILE>
+$ ./serve.sh 
 $ ./scadview.sh <YOUR SCAD FILE>
-``
+```
 You will see the view updated while editing scad file (auto-update)
