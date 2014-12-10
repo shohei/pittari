@@ -4,6 +4,8 @@ Pittari
 # What's this?
 Pittari controller for OpenSCAD
 
+いい感じにぴったりはめてくれるツール
+
 WIP: Currently only viewer implemented
 ![screenshot](image.png)
 
