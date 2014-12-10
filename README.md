@@ -23,6 +23,7 @@ $ brew install fswatch
 ### Initialize
 ```sh
 $ bower install
+$ bower install git://github.com/tbuser/thingiview.js.git --save-dev
 $ npm install
 ```
 ### Run
