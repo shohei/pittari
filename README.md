@@ -5,6 +5,7 @@ Pittari
 Pittari controller for OpenSCAD
 
 WIP: Currently only viewer implemented
+![screenshot](image.png)
 
 # Install
 ```sh
