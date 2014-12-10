@@ -10,4 +10,4 @@ fi
 FILE=$(echo $@ | sed -e 's/\.scad//g')
 sed -i -e 's?loadSTL(".*\.stl")?loadSTL("/'$FILE'.stl")?g' index.html
 /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --app="http://localhost:8000" --incognito
-./watch.sh $@
+./scripts/watch.sh $@
