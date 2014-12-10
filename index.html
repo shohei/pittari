@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <script>
+var gulp = require('gulp');
+gulp.task('reload', function () {
+    if (location) location.reload();
+});
+
+gulp.watch('**/*', ['reload']);
+        </script>
+
+    </head>
+    <body>
+        hoge 
+        test
+        foobar
+    </body>
+</html>
