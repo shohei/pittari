@@ -22,15 +22,15 @@ func main(){
 		os.Exit(0)
 	}
 
-	sleep1_finished := make(chan bool)
-	sleep2_finished := make(chan bool)
+	server_finished := make(chan bool)
+	viewer_finished := make(chan bool)
 
 	//Run static HTTP server
 	go func () {
 		log.Print("server lisening at localhost:8000")
 		flag.Parse()
 		panic(http.ListenAndServe(":"+*port, http.FileServer(http.Dir(*root))))
-		sleep1_finished <- true //never reached
+		server_finished <- true //never reached
 	}()
 
 	//open viewer and watch change
@@ -52,11 +52,11 @@ func main(){
 			return
 		}
 		print(string(stdout))
-		sleep2_finished <- true
+		viewer_finished <- true
 	}()
 
-	<- sleep1_finished //never reached
-	<- sleep2_finished //never reached
+	<- server_finished //never reached
+	<- viewer_finished //never reached
 
 	log.Print("program finished") //never reached
 
