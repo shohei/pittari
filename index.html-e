@@ -7,11 +7,6 @@
         <script src="./bower_components/thingiview.js/javascripts/plane.js"></script>
         <script src="./bower_components/thingiview.js/javascripts/thingiview.js"></script>
         <script>
-            // var gulp = require('gulp');
-            // gulp.task('reload', function () {
-            //     if (location) location.reload();
-            // });
-            // gulp.watch('**/*', ['reload']);
             window.resizeTo(540,420);
             
             window.onload = function(){

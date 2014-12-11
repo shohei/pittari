@@ -8,6 +8,11 @@ if [ "$EXT" != "scad" ]; then
    exit -1
 fi
 FILE=$(echo $@ | sed -e 's/\.scad//g')
+echo "echo FILE"
+echo $FILE
 sed -i -e 's?loadSTL(".*\.stl")?loadSTL("/'$FILE'.stl")?g' index.html
+echo "index.html confirm"
+ls index.html
 /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --app="http://localhost:8000" --incognito
 ./scripts/watch.sh $@
+
