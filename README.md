@@ -32,3 +32,4 @@ $ npm install
 go run scadview.go -f <scad_file>
 ```
 You will see the view updated while editing scad file (auto-update)
+If update not working, try restarting go server.
