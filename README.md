@@ -29,7 +29,6 @@ $ npm install
 ```
 ### Run
 ```sh
-$ ./serve.sh 
-$ ./scadview.sh <YOUR SCAD FILE>
+go run scadview.go -f <scad_file>
 ```
 You will see the view updated while editing scad file (auto-update)
