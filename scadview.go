@@ -10,6 +10,7 @@ import (
 )
 
 var port = flag.String("port", "8000", "Define what TCP port to bind to")
+var root = flag.String("root", ".", "Define the root filesystem path")
 var scad_file = flag.String("f", "", "Define the input scad file")
 
 func main(){
