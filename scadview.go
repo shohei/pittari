@@ -17,7 +17,7 @@ func main(){
 	flag.Parse()
 
 	if(*scad_file==""){
-		fmt.Println("#Usage: go run scadview.go -f <input_scad>")
+		fmt.Println("#Usage: ./scadview -f <input_scad>")
 		fmt.Println("[Error]: input file not specified.")
 		os.Exit(0)
 	}
