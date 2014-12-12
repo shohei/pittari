@@ -12,5 +12,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "thingiview.js": "git://github.com/tbuser/thingiview.js.git"
+  }
 }
